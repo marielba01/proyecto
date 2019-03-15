@@ -35,7 +35,10 @@
                     </tr>
             @endforeach
             </table>
+            <ul class="pagination" role="navigation">
             {{ $cargado->render()}}
+          </ul>
+
             </div>
           </div>
         </div>

@@ -31,7 +31,7 @@
 
 
   <div id="centrador">
-    <img src= "imagenes/token.png" class="img-fluid" alt="Responsive" >
+    <img src= "imagenes/corpo.png" class="img-fluid" alt="Responsive">
   </div>
 
 
@@ -98,10 +98,10 @@
         </main>
     </div>
 
-    
- 
 
-  
- 
+
+
+
+
 </body>
 </html>

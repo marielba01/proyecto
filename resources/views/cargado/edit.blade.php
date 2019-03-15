@@ -25,7 +25,7 @@
                     <input type="text" class="form-control" id="status" name="status" style="border-color: black;">
                 </div>
                 <button class="btn btn-primary" type="submit" >Aceptar</button>
-                <a class="btn btn-secondary" href="{{ route('cargado.index') }}">Back</a>
+                <a class="btn btn-secondary" href="{{ route('cargado.index') }}">Cancelar</a>
             </form>
         </div>
     </div>

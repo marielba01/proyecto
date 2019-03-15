@@ -31,9 +31,9 @@
 <body>
 
 
-  <div id="centrador">
+  <!-- <div id="centrador">
     <img src= "imagenes/corpo.png" class="img-fluid" alt="Responsive" >
-  </div>
+  </div> -->
 
 
 
@@ -53,7 +53,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    
+
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -99,8 +99,8 @@
         </main>
     </div>
 
-    
- 
+
+
 <script type="text/javascript" src="DataTables/datatables.min.js"></script>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
