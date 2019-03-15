@@ -18,6 +18,7 @@
                 font-weight: 200;
                 height: 80vh;
                 margin: 0;
+                background-color: green;
             }
 
             .full-height {
