@@ -54,21 +54,21 @@ body{
 
 }
 
-  
+
 
   .btn-secondary
   {
-    background-color: red; 
+    background-color: red;
     border-color: #ba93d2;
   }
   .btn-secondary:hover
   {
-    background-color: grey; 
+    background-color: grey;
     border-color: #ba93d2;
   }
-  
+
   .table-bordered {
-    border: 1px solid #263238;  
+    border: 1px solid #263238;
   }
 
   .table-bordered{

@@ -28,7 +28,7 @@ class CargadoController extends Controller
 
       ];
 
-      $cargado = Proveedores::all()->where('status','CARGADO');
+      $cargado = Proveedores::where('status','CARGADO')->paginate(10);
 
         return view('cargado.index',compact('items','cargado'));
     }

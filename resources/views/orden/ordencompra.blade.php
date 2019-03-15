@@ -18,7 +18,7 @@
             <th>Proveedor</th>
             <th>Cantidad de Creacion </th>
             <th>Cantidad Existente</th>
-            
+
         </tr>
        </thead>
     </table>
@@ -35,34 +35,34 @@
                 {data: 'proveedor'},
                 {data: 'cant_creacion'},
                 {data: 'cant_existente'},
-                
+
                         ],
       "language":
        {
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
        },
-       
+
         buttons:[
                  {
             extend: 'pdfHtml5',
             title: 'Data export',
            className: 'btn',
             text: " Exportar en PDF",
-            filename: 'Orden de compra',       
-                 },             
-      
+            filename: 'Orden de compra',
+                 },
+
           {
             extend: 'excelHtml5',
             filename: 'Proveedor(es)',
             customize: function ( xlsx ){
                 var sheet = xlsx.xl.worksheets['sheet1.xml'];
- 
+
                 // jQuery selector to add a border
                 $('row c[r*="10"]', sheet).attr( 's', '25' );
                                         }
-          } 
+          }
         ],
-       
+
             });
 
         } );

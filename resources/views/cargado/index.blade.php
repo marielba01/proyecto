@@ -35,6 +35,7 @@
                     </tr>
             @endforeach
             </table>
+            {{ $cargado->render()}}
             </div>
           </div>
         </div>
