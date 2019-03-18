@@ -4,8 +4,8 @@
 
 @section('content')
 
-<div class="centrador" style="text-align: center; margin-top: 5%">
-      <h1 style="color: red">
+<div class="centrador" style="text-align: center; margin-top: -1%">
+      <h1 >
           Bienvenido al Sistema de Administracion de Lotes de Pines
       </h1>
     </div>

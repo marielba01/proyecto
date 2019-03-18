@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-  
+
     <div class="row justify-content-center">
 
 
@@ -11,9 +11,10 @@
 
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header"> <img src= "imagenes/logo.png" class="img-fluid" alt="Responsive" style="height:50px; width:100px; margin-Left:0.5%; margin-top:1%; margin-bottom:-1.5%" > <h5 style="text-align:center; margin-top:-4%">Bienvenido</h5>
+</div>
 
-                <div class="card-body">
+                <div class="card-body" style="background:#ffebee  ">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 

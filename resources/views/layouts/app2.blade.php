@@ -16,29 +16,24 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="stylesheet" type="text/css">
 
-    <!-- <style>
-        .active{
-            background:#889af2;
-        }
-    </style> -->
 
-    <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
     <link href="{{ asset('css/click.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="background: url(svg/fondo.svg)">
 
 
   <div id="centrador">
-    <img src= "imagenes/corpo.png" class="img-fluid" alt="Responsive">
+    <img src= "imagenes/corpo2.png" class="img-fluid" alt="Responsive" style="margin-button:0%;">
   </div>
 
 
 
 
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="margin-top: 5%">
+    <div id="app" >
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel mt-0" style="margin-top:5%" >
+
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -57,9 +52,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        {{-- <li class="nav-item">
-                            @yield('content1')
-                        </li> --}}
+
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -92,16 +85,11 @@
                 </div>
             </div>
         </nav>
-
         <main class="py-4">
             @yield('content')
         </main>
+
     </div>
-
-
-
-
-
 
 </body>
 </html>
