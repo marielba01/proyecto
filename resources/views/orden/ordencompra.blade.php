@@ -10,8 +10,8 @@
     </div> --}}
 
 <div class="container">
-    <table id="example" class="table table-striped table-bordered" style="width:100%; margin-left:-0.5%; margin-right: 5%">
-       <thead>
+    <table id="example" class="table table-striped table-bordered" style="width:90%; margin-left:1%; background:#fafafa">
+       <thead class="encabezadotabla">
         <tr>
             <th>ID</th>
             <th>Orden de Compra</th>
@@ -27,7 +27,7 @@
         $(document).ready(function() {
             $('#example').DataTable({
               "ServerSide": true,
-              "dom": 'f<"clear">lr<"dt-buttons">tBp',
+              "dom": 'f<"clear">r<"dt-buttons">tBp',
               "ajax": "{{ url('api/ordencompra') }}",
               "columns": [
                 {data: 'id'},
@@ -47,7 +47,7 @@
             extend: 'pdfHtml5',
             title: 'Data export',
            className: 'btn',
-            text: " Exportar en PDF",
+            text: "PDF",
             filename: 'Orden de compra',
                  },
 

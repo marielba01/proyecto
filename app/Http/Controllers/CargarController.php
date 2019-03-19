@@ -19,7 +19,7 @@ class CargarController extends Controller
 
               'Proveedor' => [ 'url' => 'proveedor' ],
               'Orden de compra' => ['url' => 'ordencompra'],
-              'Pendiente por GSI' => ['url' => 'pendientegsi'],
+              'Pendiente' => ['url' => 'pendientegsi'],
 
 
               'Por enviar' => [ 'url' => 'porenviar'],
@@ -28,7 +28,7 @@ class CargarController extends Controller
 
       ];
 
-      $cargar = Proveedores::all()->where('status','POR CARGAR');
+      $cargar = Proveedores::where('status','POR CARGAR')->paginate(13);
 
         return view('porcargar.index',compact('items','cargar'));
     }

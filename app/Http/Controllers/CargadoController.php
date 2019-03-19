@@ -19,7 +19,7 @@ class CargadoController extends Controller
 
               'Proveedor' => [ 'url' => 'proveedor' ],
               'Orden de compra' => ['url' => 'ordencompra'],
-              'Pendiente por GSI' => ['url' => 'pendientegsi'],
+              'Pendiente' => ['url' => 'pendientegsi'],
 
 
               'Por enviar' => [ 'url' => 'porenviar'],
@@ -28,7 +28,7 @@ class CargadoController extends Controller
 
       ];
 
-      $cargado = Proveedores::where('status','CARGADO')->paginate(10);
+      $cargado = Proveedores::where('status','CARGADO')->paginate(19);
 
         return view('cargado.index',compact('items','cargado'));
     }

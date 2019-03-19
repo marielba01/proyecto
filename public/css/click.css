@@ -113,6 +113,15 @@ body{
     padding-top:5px;
   }
 
+
+
+  .paginate{
+    padding-right:180px;
+    padding-top:5px;
+  }
+
+
+
   .dataTables_length{
     padding-right: -50px;
   }
@@ -130,5 +139,8 @@ body{
   {
     padding-left: 10px;
   }
+
+
+
 
 }

@@ -15,21 +15,21 @@ class PendienteController extends Controller
     public function index()
     {
         $items = [
-            
+
                 'Proveedor' => [ 'url' => 'proveedor' ],
                 'Orden de compra' => ['url' => 'ordencompra'],
-                'Pendiente por GSI' => ['url' => 'pendientegsi'],
-              
-        
+                'Pendiente' => ['url' => 'pendientegsi'],
+
+
                 'Por enviar' => [ 'url' => 'porenviar'],
                 'Por Cargar' => ['url' => 'porcargar'],
                 'Cargado' => ['url' => 'cargado']
-           
+
         ];
 
-        $pendiente = Proveedores::all()->where('status','LIBERAR');
+        $pendiente = Proveedores::where('status','LIBERAR')->paginate(11);
 
-          return view('pendientegsi.index',compact('items','pendiente'));
+        return view('pendientegsi.index',compact('items','pendiente'));
     }
 
     /**

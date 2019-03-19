@@ -19,7 +19,7 @@ class EnviarController extends Controller
 
               'Proveedor' => [ 'url' => 'proveedor' ],
               'Orden de compra' => ['url' => 'ordencompra'],
-              'Pendiente por GSI' => ['url' => 'pendientegsi'],
+              'Pendiente' => ['url' => 'pendientegsi'],
 
 
               'Por enviar' => [ 'url' => 'porenviar'],
@@ -28,7 +28,7 @@ class EnviarController extends Controller
 
       ];
 
-      $enviar = Proveedores::all()->where('status','POR ENVIAR');
+      $enviar = Proveedores::where('status','POR ENVIAR')->paginate(14);
 
         return view('porenviar.index',compact('items','enviar'));
     }

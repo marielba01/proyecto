@@ -15,12 +15,12 @@ class ProveedorController extends Controller
     public function index()
     {
         $items = [
-            
+
                 'Proveedor' => [ 'url' => 'proveedor' ],
                 'Orden de compra' => ['url' => 'ordencompra'],
-                'Pendiente por GSI' => ['url' => 'pendientegsi'],
-             
-           
+                'Pendiente' => ['url' => 'pendientegsi'],
+
+
                 'Por enviar' => [ 'url' => 'porenviar'],
                 'Por Cargar' => ['url' => 'porcargar'],
                 'Cargado' => ['url' => 'cargado']

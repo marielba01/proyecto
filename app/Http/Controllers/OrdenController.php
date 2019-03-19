@@ -17,13 +17,13 @@ class OrdenController extends Controller
         $items = [
                 'Proveedor' => [ 'url' => 'proveedor' ],
                 'Orden de compra' => ['url' => 'ordencompra'],
-                'Pendiente por GSI' => ['url' => 'pendientegsi'],
-              
-            
+                'Pendiente' => ['url' => 'pendientegsi'],
+
+
                 'Por enviar' => [ 'url' => 'porenviar'],
                 'Por Cargar' => ['url' => 'porcargar'],
                 'Cargado' => ['url' => 'cargado']
-            
+
         ];
           $compra= Orden::all ();
           return view('orden.ordencompra',compact('items', 'compra'));
@@ -61,7 +61,7 @@ class OrdenController extends Controller
         $compra = Orden::findOrFail($id);
         return view('orden.edorden', compact('compra'));
 
-        
+
     }
 
     /**
@@ -98,5 +98,5 @@ class OrdenController extends Controller
         //
     }
 
-    
+
 }

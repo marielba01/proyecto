@@ -6,8 +6,8 @@
 <div class="container" style="margin-top: 5%">
   <div class="row">
     <div class="col">
-      <table class="table table-striped table-bordered">
-        <thead>
+      <table class="table table-striped table-bordered" style="width:90%; margin-left:1%; background:#fafafa">
+        <thead class="encabezadotabla">
              <tr>
                  <th class="text-center">ID</th>
                  <th class="text-center">Proveedor</th>
@@ -34,7 +34,11 @@
           </tr>
   @endforeach
   </table>
+    <ul class="pagination" role="navigation">
+      {{ $enviar->render()}}
+    </ul>
   </div>
+
 </div>
 </div>
 @endsection
