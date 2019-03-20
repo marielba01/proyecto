@@ -7,6 +7,24 @@
           <div class="container" style="margin-top: 5%">
             <div class="row">
               <div class="col">
+                <div class="page-header">
+
+
+                      {{Form::open(['route' => 'pendientegsi.index', 'method'=> 'GET', 'class' => 'form-inline pull-right'])}}
+                        <div clas="form-group">
+                          {{Form::text('proveedor', null, ['class' => 'form-control', 'placeholder' =>'Proveedor'])}}
+                        </div>
+                        <div clas="form-group">
+                          {{Form::number('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
+                        </div>
+                        <div clas="form-group">
+                          <button type="submit" class="btn btn-default">
+                              <span class="glyphicon glyphicon-search"></span> Buscar
+                          </button>
+
+                        </div>
+                      {!! Form::Close() !!}
+                </div>
                 <table class="table table-striped table-bordered" style="width:90%; margin-left:1%; background:#fafafa">
                   <thead class="encabezadotabla">
                        <tr>

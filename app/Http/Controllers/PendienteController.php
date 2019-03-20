@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Proveedores;
 
+
 class PendienteController extends Controller
 {
     /**
@@ -12,7 +13,7 @@ class PendienteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $items = [
 
@@ -27,7 +28,14 @@ class PendienteController extends Controller
 
         ];
 
-        $pendiente = Proveedores::where('status','LIBERAR')->paginate(11);
+
+        $proveedor = $request->get('proveedor');
+        $orden_compra= $request->get('orden_compra');
+
+        $pendiente = Proveedores::where('status','Liberar')
+          ->proveedor($proveedor)
+          ->orden($orden_compra)
+          ->paginate(11);
 
         return view('pendientegsi.index',compact('items','pendiente'));
     }
@@ -50,8 +58,7 @@ class PendienteController extends Controller
      */
     public function store(Request $request)
     {
-      // $pendiente-> status = $request->get('status');
-      // $pendiente->save();
+
     }
 
     /**
