@@ -13,7 +13,7 @@
                           {{Form::text('proveedor', null, ['class' => 'form-control', 'placeholder' =>'Proveedor'])}}
                         </div>
                         <div clas="form-group">
-                          {{Form::text('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
+                          {{Form::number('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
                         </div>
                         <div clas="form-group">
                           <button type="submit" class="btn btn-light" >
@@ -49,7 +49,7 @@
                       <td>{{ $pend -> motivo }}</td>
                       <td>{{ $pend -> orden_compra }}</td>
                       <td>{{ $pend -> status }}</td>
-                      <td ><a href="{{ route('pendientegsi.edit', $pend -> id) }}"><i class="fa fa-pencil"></i>Editar</a></td>
+                      <td ><a href="{{ route('pendientegsi.edit', $pend -> id) }}"><i class="fa fa-pencil"></i> Editar</a></td>
                     </tr>
 
             @endforeach
