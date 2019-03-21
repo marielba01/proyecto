@@ -28,7 +28,7 @@ class CargarController extends Controller
 
       ];
 
-      $cargar = Proveedores::where('status','POR CARGAR')->paginate(13);
+      $cargar = Proveedores::where('status','Por Cargar')->paginate(13);
 
         return view('porcargar.index',compact('items','cargar'));
     }

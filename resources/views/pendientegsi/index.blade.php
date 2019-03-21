@@ -15,15 +15,17 @@
                           {{Form::text('proveedor', null, ['class' => 'form-control', 'placeholder' =>'Proveedor'])}}
                         </div>
                         <div clas="form-group">
-                          {{Form::number('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
+                          {{Form::text('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
                         </div>
                         <div clas="form-group">
-                          <button type="submit" class="btn btn-default">
-                              <span class="glyphicon glyphicon-search"></span> Buscar
+                          <button type="submit" class="btn btn-primary">
+                              <span class="glyphicon glyphicon-search" ></span> Buscar
                           </button>
-
+                          <a href="{{ route('pendientegsi.index') }}" class="btn btn-danger"> Limpiar </a>
                         </div>
+
                       {!! Form::Close() !!}
+
                 </div>
                 <table class="table table-striped table-bordered" style="width:90%; margin-left:1%; background:#fafafa">
                   <thead class="encabezadotabla">
@@ -49,13 +51,14 @@
                       <td>{{ $pend -> motivo }}</td>
                       <td>{{ $pend -> orden_compra }}</td>
                       <td>{{ $pend -> status }}</td>
-                      <td ><a href="{{ route('pendientegsi.edit', $pend -> id) }}" class="btn btn-primary">Editar</a></td>
+                      <td ><a href="{{ route('pendientegsi.edit', $pend -> id) }}">Editar</a></td>
                     </tr>
             @endforeach
             </table>
               <ul class="pagination" role="navigation">
                 {{ $pendiente->render()}}
               </ul>
+
             </div>
           </div>
         </div>

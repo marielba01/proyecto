@@ -22,10 +22,10 @@
 
                 <div class="form-group">
                     <label for="status"> <h4 >Estatus:</h4> </label>
-                    <input type="text" class="form-control" id="status" name="status" style="border-color: black;">
+                    <input type="text" value="Liberado" readonly class="form-control" id="status" name="status" style="border-color: black;">
                 </div>
                 <button class="btn btn-primary" type="submit" >Aceptar</button>
-                <a class="btn btn-secondary" href="{{ route('pendientegsi.index') }}">Back</a>
+                <a class="btn btn-secondary" href="{{ route('pendientegsi.index') }}">Volver</a>
             </form>
         </div>
     </div>

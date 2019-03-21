@@ -28,7 +28,7 @@ class EnviarController extends Controller
 
       ];
 
-      $enviar = Proveedores::where('status','POR ENVIAR')->paginate(14);
+      $enviar = Proveedores::where('status','Por Enviar')->paginate(14);
 
         return view('porenviar.index',compact('items','enviar'));
     }
