@@ -13,7 +13,7 @@ class CargarController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
       $items = [
 
@@ -28,7 +28,13 @@ class CargarController extends Controller
 
       ];
 
-      $cargar = Proveedores::where('status','Por Cargar')->paginate(13);
+      $proveedor = $request->get('proveedor');
+      $orden_compra= $request->get('orden_compra');
+
+      $cargar = Proveedores::where('status','Por Cargar')
+      ->proveedor($proveedor)
+      ->orden($orden_compra)
+      ->paginate(13);
 
         return view('porcargar.index',compact('items','cargar'));
     }

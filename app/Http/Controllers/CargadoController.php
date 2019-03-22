@@ -13,9 +13,10 @@ class CargadoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
       $items = [
+
 
               'Proveedor' => [ 'url' => 'proveedor' ],
               'Orden de compra' => ['url' => 'ordencompra'],
@@ -27,8 +28,13 @@ class CargadoController extends Controller
               'Cargado' => ['url' => 'cargado']
 
       ];
+      $proveedor = $request->get('proveedor');
+      $orden_compra= $request->get('orden_compra');
 
-      $cargado = Proveedores::where('status','Cargado')->paginate(19);
+      $cargado = Proveedores::where('status','Cargado')
+      ->proveedor($proveedor)
+      ->orden($orden_compra)
+      ->paginate(19);
 
         return view('cargado.index',compact('items','cargado'));
     }

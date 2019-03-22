@@ -13,7 +13,7 @@ class EnviarController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
       $items = [
 
@@ -28,7 +28,13 @@ class EnviarController extends Controller
 
       ];
 
-      $enviar = Proveedores::where('status','Por Enviar')->paginate(14);
+      $proveedor = $request->get('proveedor');
+      $orden_compra= $request->get('orden_compra');
+
+      $enviar = Proveedores::where('status','Por Enviar')
+      ->proveedor($proveedor)
+      ->orden($orden_compra)
+      ->paginate(18);
 
         return view('porenviar.index',compact('items','enviar'));
     }

@@ -3,11 +3,6 @@
 @extends('menu')
 
 @section('content')
-    {{-- <div class="content">
-        <div class="title m-b-md">
-            <h1 style="text-align: center; margin-bottom: 2%">Consulta por Orden de Compra</h1>
-        </div>
-    </div> --}}
 
 <div class="container">
     <table id="example" class="table table-striped table-bordered" style="width:90%; margin-left:1%; background:#fafafa">
