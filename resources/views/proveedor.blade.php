@@ -17,6 +17,7 @@
                 <th class="text-center">Motivo</th>
                 <th class="text-center">Codigo Motivo</th>
                 <th class="text-center">Status</th>
+                <th class="text-center">Fecha</th>
 
             </tr>
        </thead>
@@ -39,6 +40,7 @@
             {data: 'motivo'},
             {data: 'cod_motivo'},
             {data: 'status'},
+            {data: 'fecha'},
 
   ],
   "language": {
@@ -50,10 +52,10 @@
         buttons: [
                     {
             extend: 'pdfHtml5',
-            title: 'Data export',
+            title: 'Proveedor(es)',
             className: 'btn',
             text: "PDF",
-            filename: 'Proveedor',
+            filename: 'Proveedor(es)',
                 },
 
          {

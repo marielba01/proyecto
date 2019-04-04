@@ -12,7 +12,7 @@
                 {{Form::text('proveedor', null, ['class' => 'form-control', 'placeholder' =>'Proveedor'])}}
               </div>
               <div clas="form-group">
-                {{Form::number('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
+                {{Form::text('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
               </div>
               <div clas="form-group">
                 <button type="submit" class="btn btn-light" >
