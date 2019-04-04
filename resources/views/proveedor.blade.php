@@ -17,7 +17,6 @@
                 <th class="text-center">Motivo</th>
                 <th class="text-center">Codigo Motivo</th>
                 <th class="text-center">Status</th>
-                <th class="text-center">Fecha</th>
 
             </tr>
        </thead>
@@ -40,7 +39,6 @@
             {data: 'motivo'},
             {data: 'cod_motivo'},
             {data: 'status'},
-            {data: 'fecha'},
 
   ],
   "language": {

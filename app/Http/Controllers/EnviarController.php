@@ -31,7 +31,7 @@ class EnviarController extends Controller
       $proveedor = $request->get('proveedor');
       $orden_compra= $request->get('orden_compra');
 
-      $enviar = Proveedores::where('status','Por Enviar')
+      $enviar = Proveedores::where('status','Liberado')
       ->proveedor($proveedor)
       ->orden($orden_compra)
       ->paginate(18);

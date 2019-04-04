@@ -22,7 +22,6 @@ class CreateProveedoresTable extends Migration
             $table->string('motivo');
             $table->integer('orden_compra');
             $table->string('status');
-            // $table->date('fecha');
             $table->timestamps();
         });
     }

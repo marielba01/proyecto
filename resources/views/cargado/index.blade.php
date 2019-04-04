@@ -34,7 +34,7 @@
                            <th class="text-center">Motivo</th>
                            <th class="text-center">Codigo Motivo</th>
                            <th class="text-center">Status</th>
-                           <!-- <th class="text-center">Detalles</th> -->
+                           <th class="text-center">Fecha</th>
                        </tr>
                   </thead>
                 @foreach ($cargado as $car)
@@ -47,6 +47,7 @@
                       <td>{{ $car -> motivo }}</td>
                       <td>{{ $car -> cod_motivo }}</td>
                       <td>{{ $car -> status }}</td>
+                      <td>{{ $car -> updated_at }}</td>
                       <!-- <td><a href="{{ route('cargado.edit', $car -> id) }}" class="btn btn-primary">Detalles</a></td> -->
                     </tr>
             @endforeach

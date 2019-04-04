@@ -24,7 +24,7 @@
             {!! Form::Close() !!}
 
       </div>
-      <table class="table table-striped table-bordered" style="width:90%; margin-left:1%; background:#fafafa">
+      <table class="table table-striped table-bordered" style="width:100%; margin-left:1%; background:#fafafa">
         <thead class="encabezadotabla">
              <tr>
                  <th class="text-center">ID</th>
@@ -35,6 +35,7 @@
                  <th class="text-center">Motivo</th>
                  <th class="text-center">Codigo Motivo</th>
                  <th class="text-center">Status</th>
+                 <th class="text-center">Fecha</th>
                  <th class="text-center">Detalles</th>
              </tr>
         </thead>
@@ -48,6 +49,7 @@
             <td>{{ $env -> motivo }}</td>
             <td>{{ $env -> cod_motivo }}</td>
             <td>{{ $env -> status }}</td>
+            <td>{{ $env -> updated_at }}</td>
             <td><a href="{{ route('porenviar.edit', $env -> id) }}"><i class="fa fa-pencil"></i> Editar</a></td>
           </tr>
   @endforeach
