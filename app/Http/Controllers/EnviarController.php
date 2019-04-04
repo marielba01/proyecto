@@ -27,11 +27,12 @@ class EnviarController extends Controller
               'Cargado' => ['url' => 'cargado']
 
       ];
-
+      $id= $request->get('id');
       $proveedor = $request->get('proveedor');
       $orden_compra= $request->get('orden_compra');
 
       $enviar = Proveedores::where('status','Liberado')
+      ->id($id)
       ->proveedor($proveedor)
       ->orden($orden_compra)
       ->paginate(18);

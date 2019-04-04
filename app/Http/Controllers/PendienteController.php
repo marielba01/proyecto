@@ -28,11 +28,12 @@ class PendienteController extends Controller
 
         ];
 
-
+        $id= $request->get('id');
         $proveedor = $request->get('proveedor');
         $orden_compra= $request->get('orden_compra');
 
         $pendiente = Proveedores::where('status','Liberar')
+          ->id($id)
           ->proveedor($proveedor)
           ->orden($orden_compra)
           ->paginate(11);

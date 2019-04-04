@@ -25,14 +25,9 @@
                 {{ csrf_field() }}
                 {{ method_field('PUT') }}
 
-                <div class="form-group row">
-                    <label for="status" class="ml-4"> <h4 >Estatus:</h4> </label>
-
                     <div class="col-lg-3">
-                      <input type="text" value="Cargado" readonly class="form-control" id="status" name="status" style="border-color: black;">
+                      <input type="hidden" value="Cargado" readonly class="form-control" id="status" name="status" style="border-color: black;">
                     </div>
-
-                </div>
                 <button class="btn btn-primary" type="submit" ><i class="fa fa-floppy-o" ></i>Aceptar</button>
                 <a class="btn btn-secondary" href="{{ route('porcargar.index') }}"><i class="fa fa-undo" ></i> Atras</a>
             </form>

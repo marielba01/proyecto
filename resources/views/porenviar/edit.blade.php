@@ -24,6 +24,10 @@
                 @method('put') --}}
                 {{ csrf_field() }}
                 {{ method_field('PUT') }}
+                
+                <div class="col-lg-3">
+                  <input type="hidden" value="Por Cargar" readonly class="form-control" id="status" name="status" style="border-color: black;">
+                </div>
 
                 <button class="btn btn-primary" type="submit" ><i class="fa fa-floppy-o" ></i>Aceptar</button>
                 <a class="btn btn-secondary" href="{{ route('porenviar.index') }}"><i class="fa fa-undo" ></i>Atras</a>
