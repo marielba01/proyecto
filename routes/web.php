@@ -15,6 +15,7 @@
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/graficas', 'GraficaController@index')->name('graficas');
 
 Route::resource('/proveedor', 'ProveedorController');
 Route::resource('/ordencompra', 'OrdenController');

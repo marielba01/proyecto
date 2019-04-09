@@ -32,3 +32,8 @@ Route::get('ordencompra', function(){
   ->rawColumns(['btn'])
 	->toJson();
 });
+
+Route::get(
+  'graficas/{tipo}/{anio}',
+  'GraficaController@graficarTipoOperacionGraficas'
+);
