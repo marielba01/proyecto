@@ -21,4 +21,10 @@ class Proveedores extends Model
     // if($orden_compra)
      return $query->where('orden_compra', 'LIKE', "%$orden_compra%");
  }
+
+   public function scopeId($query, $id)
+  {
+    // if($orden_compra)
+     return $query->where('id', 'LIKE', "%$id%");
+ }
 }

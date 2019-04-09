@@ -50,10 +50,10 @@
         buttons: [
                     {
             extend: 'pdfHtml5',
-            title: 'Data export',
+            title: 'Proveedor(es)',
             className: 'btn',
             text: "PDF",
-            filename: 'Proveedor',
+            filename: 'Proveedor(es)',
                 },
 
          {

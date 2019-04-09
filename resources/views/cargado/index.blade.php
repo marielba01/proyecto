@@ -9,12 +9,18 @@
               <div class="col">
                 <div class="page-header">
                       {{Form::open(['route' => 'cargado.index', 'method'=> 'GET', 'class' => 'form-inline pull-center'])}}
+                      <div clas="form-group" >
+                        {{Form::text('id', null, ['class' => 'form-control', 'placeholder' =>'ID'])}}
+                      </div>
+
                         <div clas="form-group" >
                           {{Form::text('proveedor', null, ['class' => 'form-control', 'placeholder' =>'Proveedor'])}}
                         </div>
+
                         <div clas="form-group">
                           {{Form::text('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
                         </div>
+
                         <div clas="form-group">
                           <button type="submit" class="btn btn-light" >
                               <i class="fa fa-search" ></i>
@@ -34,7 +40,7 @@
                            <th class="text-center">Motivo</th>
                            <th class="text-center">Codigo Motivo</th>
                            <th class="text-center">Status</th>
-                           <!-- <th class="text-center">Detalles</th> -->
+                           <th class="text-center">Fecha</th>
                        </tr>
                   </thead>
                 @foreach ($cargado as $car)
@@ -47,7 +53,7 @@
                       <td>{{ $car -> motivo }}</td>
                       <td>{{ $car -> cod_motivo }}</td>
                       <td>{{ $car -> status }}</td>
-                      <!-- <td><a href="{{ route('cargado.edit', $car -> id) }}" class="btn btn-primary">Detalles</a></td> -->
+                      <td>{{ $car -> updated_at }}</td>
                     </tr>
             @endforeach
             </table>

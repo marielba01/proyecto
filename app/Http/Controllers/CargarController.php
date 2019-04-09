@@ -27,11 +27,12 @@ class CargarController extends Controller
               'Cargado' => ['url' => 'cargado']
 
       ];
-
+      $id= $request->get('id');
       $proveedor = $request->get('proveedor');
       $orden_compra= $request->get('orden_compra');
 
       $cargar = Proveedores::where('status','Por Cargar')
+      ->id($id)
       ->proveedor($proveedor)
       ->orden($orden_compra)
       ->paginate(13);
