@@ -24,8 +24,8 @@
 
 
     <!-- Scripts -->
+      <script src="{{ asset('Highcharts/code/highcharts.js') }}" charset="utf-8"></script>
     <script src="{{ asset('js/graficas.js') }}" charset="utf-8"></script>
-    
 
 </head>
 <body style="background: url(svg/fondo.svg)">

@@ -37,4 +37,23 @@ class GraficaController extends Controller
     return $meses_operaciones;
 
     }
+
+		public function graficarTipoOperacionGraficasAnio($tipo1, $anio1){
+
+			$graficaTipoOperacion = [];
+			$query = Proveedores::query();
+			if (isset($tipo1) and ($tipo1 != '' )){
+				$query = $query->where('status', 'like', '%'.$tipo1.'%');
+			}
+			if(isset($anio1) and ($anio1 != '' )){
+				$query = $query->whereyear('fecha', '>=', $anio1);
+			}
+			$query =$query->selectRaw(
+				'COUNT(*) as cantidad, extract(year from fecha) as ano'
+				)
+				->groupBy('ano')
+				->orderBy('ano', 'asc');
+				$graficaTipoOperacion = $query->get();
+				return $graficaTipoOperacion;
+		}
 }

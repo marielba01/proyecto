@@ -18,14 +18,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('proveedor', function(){
-	
+
 	return datatables()
 	->eloquent(App\Proveedores::query())
 	->toJson();
 });
 
 Route::get('ordencompra', function(){
-	
+
 	return datatables()
 	->eloquent(App\Orden::query())
   ->addColumn('btn', 'actions')
@@ -37,3 +37,8 @@ Route::get(
   'graficas/{tipo}/{anio}',
   'GraficaController@graficarTipoOperacionGraficas'
 );
+
+Route::get(
+  'graficas_anio/{tipo1}/{anio1}',
+  'GraficaController@graficarTipoOperacionGraficasAnio'
+ );

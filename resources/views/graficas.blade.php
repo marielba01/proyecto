@@ -1,10 +1,10 @@
 @extends('layouts.app2')
 
-@section('content1')
-	
-	<script src="{{ asset('Highcharts/code/highcharts.js') }}" charset="utf-8"></script>
+@section('content')
+
+
 	<script src="{{ asset('Highcharts/code/modules/exporting.js') }}" charset="utf-8"></script>
-  	<script src="{{ asset('Highcharts/code/modules/export-data.js') }}" charset="utf-8"></script>
+<script src="{{ asset('Highcharts/code/modules/export-data.js') }}" charset="utf-8"></script>
   	<script src="{{ asset('js/graficas.js') }}" charset="utf-8"></script>
 
 
@@ -16,7 +16,7 @@
           <div class="card-header">
             <div class="row justify-content-between">
               <div class="col-4 col-md-4">
-                <span class="text-left" style="padding-left: 20px;">Gr&aacute;ficas mensuales - Tipo de operaci&oacute;n</span>
+                <span class="text-left" style="padding-left: 20px;">Gr&aacute;ficas mensuales - Tipo de Estatus</span>
               </div>
             </div>
           </div>
@@ -29,8 +29,8 @@
                     <option value="">Todos</option>
                     <option value="Por Enviar">Por Enviar</option>
                     <option value="Por Cargar">Por Cargar</option>
-                    <option value="Cargado">Por Cargar</option>
-                    <option value="Liberar">Por Cargar</option>
+                    <option value="Cargado">Cargado</option>
+                    <option value="Liberar">Liberar</option>
                   </select>
                 </div>
               </div>
@@ -57,7 +57,7 @@
       </div>
     </div>
   </div>
-  <div id="container" style="width: 90%; height: 500px; margin: 0 auto; margin-top: 50px;"></div>
+  <div id="container1" style="width: 90%; height: 500px; margin: 0 auto; margin-top: 50px;"></div>
 
   <div class="container-fluid">
     <div class="row">
@@ -67,7 +67,7 @@
           <div class="card-header">
             <div class="row justify-content-between">
               <div class="col-4 col-md-4">
-                <span class="text-left" style="padding-left: 20px;">Gr&aacute;ficas anuales - Tipo de Solicitud</span>
+                <span class="text-left" style="padding-left: 20px;">Gr&aacute;ficas anuales - Tipo de Estatus</span>
               </div>
             </div>
           </div>
