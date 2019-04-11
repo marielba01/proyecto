@@ -98,5 +98,9 @@
 
     </div>
 
+    <div class="row">
+      @extends('footer')
+    </div>
+
 </body>
 </html>

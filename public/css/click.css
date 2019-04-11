@@ -156,7 +156,19 @@ body{
 {
   /* display: inline; */
 }
+footer
+{
+  width: 100%;
+}
+#footer{
+  background: #01579b;
+  margin-top: 50px;
+}
 
+#footer a
+{
+  color: white;
+}
 
 
 
