@@ -159,10 +159,13 @@ body{
 footer
 {
   width: 100%;
+  position: absolute;
+	bottom: 0 auto;
+  margin-top: 50px;
 }
 #footer{
   background: #01579b;
-  margin-top: 50px;
+
 }
 
 #footer a
@@ -170,6 +173,6 @@ footer
   color: white;
 }
 
-
-
+div.row.justify-content-center{
+  padding: 15%;
 }
