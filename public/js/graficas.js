@@ -191,7 +191,6 @@ function graficarTipoOperacionGrafica(tipo, anio){
       var cas03 = graficarTipoOperacionGraficaAnio("Liberar", anio1);
 
       $.each(cas00, function(i, item){
-        categorias.push(item.ano)
         enviar.push(item.cantidad)
       });
 
@@ -204,6 +203,7 @@ function graficarTipoOperacionGrafica(tipo, anio){
       });
 
       $.each(cas03, function(i,item){
+        categorias.push(item.ano)
         liberado.push(item.cantidad)
       });
 
@@ -287,13 +287,13 @@ function graficarTipoOperacionGrafica(tipo, anio){
       if(tipo1 == "Liberar"){
 
         var categorias = [];
-        var cargado = [];
+        var liberado = [];
 
         var cas03 = graficarTipoOperacionGraficaAnio("Liberar", anio1);
 
         $.each(cas03, function(i,item){
           categorias.push(item.ano)
-          cargado.push(item.cantidad)
+          liberado.push(item.cantidad)
         });
 
         series1 = [{

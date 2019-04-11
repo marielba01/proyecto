@@ -8,6 +8,11 @@ use App\Proveedores;
 class GraficaController extends Controller
 {
 
+	public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 	public function index()
     {
 
