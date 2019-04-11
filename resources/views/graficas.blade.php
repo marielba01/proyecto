@@ -77,11 +77,11 @@
                 <div class="form-group">
                   <label for="tipo1">Seleccione:</label>
                   <select class="form-control tipo1" id="tipo1">
-                    <option value="">Todos</option>
+                    <option value="Todos">Todos</option>
                     <option value="Por Enviar">Por Enviar</option>
                     <option value="Por Cargar">Por Cargar</option>
-                    <option value="Cargado">Por Cargar</option>
-                    <option value="Liberar">Por Cargar</option>
+                    <option value="Cargado">Cargado</option>
+                    <option value="Liberar">Liberar</option>
                   </select>
                 </div>
               </div>
@@ -89,6 +89,7 @@
                 <div class="form-group">
                   <label for="anio1">A&ntilde;o:</label>
                   <select class="form-control anio1" id="anio1">
+                    <option value=" ">Seleccione un AÑO</option>
                     <option value="2019">2019</option>
                     <option value="2018">2018</option>
                     <option value="2017">2017</option>
