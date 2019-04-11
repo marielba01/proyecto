@@ -17,7 +17,7 @@ class CargadoController extends Controller
     {
         $this->middleware('auth');
     }
-  
+
     /**
      * Display a listing of the resource.
      *
@@ -35,7 +35,8 @@ class CargadoController extends Controller
 
               'Por enviar' => [ 'url' => 'porenviar'],
               'Por Cargar' => ['url' => 'porcargar'],
-              'Cargado' => ['url' => 'cargado']
+              'Cargado' => ['url' => 'cargado'],
+              'Graficas' => ['url' => 'graficas']
 
       ];
       $id= $request->get('id');
@@ -101,7 +102,8 @@ class CargadoController extends Controller
           'Lotes'         => ['submenu' => [
               'Por enviar' => [ 'url' => 'porenviar'],
               'Por Cargar' => ['url' => 'porcargar'],
-              'Cargado' => ['url' => 'cargado']
+              'Cargado' => ['url' => 'cargado'],
+              'Graficas' => ['url' => 'graficas']
           ]
         ]
       ];

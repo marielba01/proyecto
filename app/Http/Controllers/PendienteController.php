@@ -13,7 +13,7 @@ class PendienteController extends Controller
     {
         $this->middleware('auth');
     }
-  
+
     /**
      * Display a listing of the resource.
      *
@@ -30,7 +30,8 @@ class PendienteController extends Controller
 
                 'Por enviar' => [ 'url' => 'porenviar'],
                 'Por Cargar' => ['url' => 'porcargar'],
-                'Cargado' => ['url' => 'cargado']
+                'Cargado' => ['url' => 'cargado'],
+                'Graficas' => ['url' => 'graficas']
 
         ];
 
@@ -97,7 +98,8 @@ class PendienteController extends Controller
           'Lotes'         => ['submenu' => [
               'Por enviar' => [ 'url' => 'porenviar'],
               'Por Cargar' => ['url' => 'porcargar'],
-              'Cargado' => ['url' => 'cargado']
+              'Cargado' => ['url' => 'cargado'],
+              'Graficas' => ['url' => 'graficas']
           ]
         ]
       ];

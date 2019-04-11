@@ -7,16 +7,22 @@ use App\Proveedores;
 
 class GraficaController extends Controller
 {
-
-	public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
 	public function index()
     {
+			$items = [
 
-        return view('graficas');
+							'Proveedor' => [ 'url' => 'proveedor' ],
+							'Orden de compra' => ['url' => 'ordencompra'],
+							'Pendiente' => ['url' => 'pendientegsi'],
+
+
+							'Por enviar' => [ 'url' => 'porenviar'],
+							'Por Cargar' => ['url' => 'porcargar'],
+							'Cargado' => ['url' => 'cargado'],
+							'Graficas' => ['url' => 'graficas']
+			];
+
+        return view('graficas', compact('items'));
     }
 
     public function graficarTipoOperacionGraficas($status, $year){

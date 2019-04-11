@@ -12,7 +12,7 @@ class ProveedorController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     /**
      * Display a listing of the resource.
      *
@@ -29,7 +29,8 @@ class ProveedorController extends Controller
 
                 'Por enviar' => [ 'url' => 'porenviar'],
                 'Por Cargar' => ['url' => 'porcargar'],
-                'Cargado' => ['url' => 'cargado']
+                'Cargado' => ['url' => 'cargado'],
+                'Graficas' => ['url' => 'graficas']
         ];
           $proveed = Proveedores::all();
           return view('proveedor',compact('items'),compact('proveed')

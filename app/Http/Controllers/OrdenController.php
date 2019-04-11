@@ -16,8 +16,8 @@ class OrdenController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
-  
+
+
     public function index()
     {
         $items = [
@@ -28,7 +28,8 @@ class OrdenController extends Controller
 
                 'Por enviar' => [ 'url' => 'porenviar'],
                 'Por Cargar' => ['url' => 'porcargar'],
-                'Cargado' => ['url' => 'cargado']
+                'Cargado' => ['url' => 'cargado'],
+                'Graficas' => ['url' => 'graficas']
 
         ];
           $compra= Orden::all ();

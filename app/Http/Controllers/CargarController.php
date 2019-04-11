@@ -17,7 +17,7 @@ class CargarController extends Controller
     {
         $this->middleware('auth');
     }
-  
+
     /**
      * Display a listing of the resource.
      *
@@ -34,7 +34,8 @@ class CargarController extends Controller
 
               'Por enviar' => [ 'url' => 'porenviar'],
               'Por Cargar' => ['url' => 'porcargar'],
-              'Cargado' => ['url' => 'cargado']
+              'Cargado' => ['url' => 'cargado'],
+              'Graficas' => ['url' => 'graficas']
 
       ];
       $id= $request->get('id');
@@ -100,7 +101,8 @@ class CargarController extends Controller
           'Lotes'         => ['submenu' => [
               'Por enviar' => [ 'url' => 'porenviar'],
               'Por Cargar' => ['url' => 'porcargar'],
-              'Cargado' => ['url' => 'cargado']
+              'Cargado' => ['url' => 'cargado'],
+              'Graficas' => ['url' => 'graficas']
           ]
         ]
       ];

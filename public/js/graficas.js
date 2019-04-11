@@ -95,10 +95,10 @@ function graficarTipoOperacionGrafica(tipo, anio){
         type: 'column'
       },
       title: {
-        text: 'Graficas por mes de Casos Negativos'
+        text: 'Graficos por Mes - Estatus'
       },
       subtitle: {
-        text: 'Fuente: Departamento de Fraudes, CANTV'
+        text: 'Fuente: GSOS, CANTV'
       },
       xAxis: {
         categories: [
@@ -310,10 +310,10 @@ function graficarTipoOperacionGrafica(tipo, anio){
         type: 'column'
       },
       title: {
-        text: 'Graficas por mes de Casos Negativos'
+        text: 'Graficos por Año - Estatus'
       },
       subtitle: {
-        text: 'Fuente: Departamento de Fraudes, CANTV'
+        text: 'Fuente: GSOS, CANTV'
       },
       xAxis: {
         categories: categorias,
@@ -322,7 +322,7 @@ function graficarTipoOperacionGrafica(tipo, anio){
       yAxis: {
         min: 0,
         title: {
-          text: 'Casos negativos'
+          text: 'Estatus'
         }
       },
       tooltip: {

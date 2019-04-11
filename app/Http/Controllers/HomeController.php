@@ -30,9 +30,11 @@ class HomeController extends Controller
                 'Orden de compra' => ['url' => 'ordencompra'],
                 'Pendiente' => ['url' => 'pendientegsi'],
 
+
                 'Por enviar' => [ 'url' => 'porenviar'],
                 'Por Cargar' => ['url' => 'porcargar'],
-                'Cargado' => ['url' => 'cargado']
+                'Cargado' => ['url' => 'cargado'],
+                'Graficas' => ['url' => 'graficas']
 
 
         ];
