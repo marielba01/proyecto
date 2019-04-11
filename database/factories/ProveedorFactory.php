@@ -12,6 +12,6 @@ $factory->define(App\Proveedores::class, function (Faker $faker) {
         'tiraje' =>500000,
         'orden_compra' => mt_rand(1000000,18700000),
         'status' => $faker->randomElement(['Liberar','Por Cargar','Por Enviar', 'Cargado' ]),
-        
+        'fecha'=>$faker->dateTimeBetween($startDate = '-9 years', $endDate = 'now'),
     ];
 });
