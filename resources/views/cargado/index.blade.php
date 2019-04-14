@@ -57,7 +57,7 @@
                     </tr>
             @endforeach
             </table>
-            <ul class="pagination" role="navigation">
+            <ul id="pagi" role="navigation">
               {{ $cargado->render()}}
             </ul>
 

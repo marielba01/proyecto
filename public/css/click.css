@@ -87,9 +87,9 @@ body{
     background-color: #01579b;
     }
 
-  .pagination{
+  /* .pagination{
     padding-left:424px;
-  }
+  } */
 
   .navbar-light .navbar-brand {
     color:white;
@@ -104,25 +104,47 @@ body{
 
   }
 
-  #example_filter {
+  div#example_filter.dataTables_filter {
+    margin-top: 5%;
     padding-right:100px;
   }
 
-  .pagination{
-    padding-right:100px;
-    padding-top:5px;
+  ul#pagination{
+    padding-left: 9%;
+    padding-right: 10px;
+    margin-left: 40%;
+  }
 
+  ul#pagination1{
+    margin-left: 55%;
+  }
+
+  ul.pagination{
+    /* padding-right: 5px;
+    padding-top:5px; */
+    padding-right: 9%;
+  }
+
+
+  .pagina{
+    padding-right: 5px;
+    padding-top:5px;
+    padding-left: 500px;
+  }
+
+
+  #pagi{
+  margin-left: 46%;
+  padding-left: 45px;
   }
 
 
 
   .paginate{
-    padding-right:180px;
+    padding-right:10px;
     padding-top:5px;
 
   }
-
-
 
   .dataTables_length{
     padding-right: -50px;

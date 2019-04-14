@@ -46,7 +46,7 @@ class CargarController extends Controller
       ->id($id)
       ->proveedor($proveedor)
       ->orden($orden_compra)
-      ->paginate(13);
+      ->paginate(4);
 
         return view('porcargar.index',compact('items','cargar'));
     }

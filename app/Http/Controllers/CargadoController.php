@@ -47,7 +47,7 @@ class CargadoController extends Controller
       ->id($id)
       ->proveedor($proveedor)
       ->orden($orden_compra)
-      ->paginate(19);
+      ->paginate(20);
 
         return view('cargado.index',compact('items','cargado'));
     }

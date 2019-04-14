@@ -19,7 +19,7 @@
               <div clas="form-group">
                 {{Form::text('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
               </div>
-              
+
               <div clas="form-group">
                 <button type="submit" class="btn btn-light" >
                     <i class="fa fa-search" ></i>
@@ -58,7 +58,7 @@
           </tr>
   @endforeach
   </table>
-    <ul class="pagination" role="navigation">
+    <ul id="pagination1" role="navigation">
         {{ $cargar->render()}}
     </ul>
 
