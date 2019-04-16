@@ -39,7 +39,9 @@
               <div id="container_estatus_solicitud" class="col-3">
                 <div class="form-group">
                   <label for="anio">A&ntilde;o:</label>
+
                   <select class="form-control anio" id="anio">
+										<option value=" ">Seleccione un Año</option>
                     <option value="2019">2019</option>
                     <option value="2018">2018</option>
                     <option value="2017">2017</option>
@@ -91,7 +93,7 @@
                 <div class="form-group">
                   <label for="anio1">A&ntilde;o:</label>
                   <select class="form-control anio1" id="anio1">
-                    <option value=" ">Seleccione un AÑO</option>
+                    <option value=" ">Seleccione un Año</option>
                     <option value="2019">2019</option>
                     <option value="2018">2018</option>
                     <option value="2017">2017</option>

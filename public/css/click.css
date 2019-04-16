@@ -198,3 +198,18 @@ footer
 div.row.justify-content-center{
   padding: 15%;
 }
+
+#img_nea
+{
+  float: right;
+}
+
+#position
+{
+  display: inline;
+}
+
+/* div#position
+{
+  margin: 5px;
+} */

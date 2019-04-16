@@ -9,7 +9,7 @@
 
       <link rel="stylesheet" type="text/css" href="css/click.css"/>
 
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header"> <img src= "imagenes/logo.png" class="img-fluid" alt="Responsive" style="height:50px; width:100px; margin-Left:0.5%; margin-top:1%; margin-bottom:-1.5%" > <h5 style="text-align:center; margin-top:4%">Bienvenido al Sistema de Administracion de Lotes de Pines</h5>
 </div>
