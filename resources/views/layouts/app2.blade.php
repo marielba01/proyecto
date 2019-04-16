@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" >
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,11 +28,11 @@
     <script src="{{ asset('js/graficas.js') }}" charset="utf-8"></script>
 
 </head>
-<body style="background: url(svg/fondo.svg)">
+<body style="background: url(svg/fondo.svg); ">
 
 
   <div id="centrador">
-    <img src= "imagenes/corpo2.png" class="img-fluid" alt="Responsive" style="margin-button:0%;">
+    <img src= "imagenes/corpo2.png" class="img-fluid" alt="Responsive" style="margin-button:0%; ">
   </div>
 
 

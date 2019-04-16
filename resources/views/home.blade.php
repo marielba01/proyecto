@@ -13,7 +13,7 @@
 
 
 <div class="row" style="margin-top: 5%" >
-<div class="container col-lg-7" id="position">
+<div class="col-lg-8 col-lg-offset-1" id="position">
 
 
     <div class="letras mt-0" style="text-align: center">
@@ -39,8 +39,8 @@
    </div>
 
 
-     <div class="container col-lg-4" id="position">
-       <img src="imagenes/ima.gif" alt="nea" id="img_nea" style="float: right; height: 500px; width: 500px; margin-right:45px">
+     <div class="col-lg-4 m-0 col-lg-offset-1" id="position">
+       <img class="img-fluid" src="imagenes/ima.gif" alt="nea" id="img_nea" style="float: right; height: 500px; width: 500px; margin-right:0px">
      </div>
    </div>
 

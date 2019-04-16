@@ -4,7 +4,7 @@
 
 @section('content')
 
-          <div class="container" style="margin-top: 3%">
+          <div class="container" style="margin-top: 3%; margin-left: 100px">
             <div class="row" >
               <div class="col">
                 <div class="page-header">

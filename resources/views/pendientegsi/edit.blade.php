@@ -8,8 +8,8 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
-  <body style="padding: 15% 25%; background: url(../../svg/fondo.svg)" >
-    <div class="alert alert-dark" style="border-color: black; ">
+  <body style="padding: 15% 25%; background: url(../../svg/fondo.svg);" >
+    <div class="alert alert-dark" style="border-color: black; width: 700px">
     <div class="row" style="margin: 4% 0%;">
         <div class="col">
             <h1>¿Esta Seguro de Liberar el lote N° {{ $pendiente->id }} ?</h1>

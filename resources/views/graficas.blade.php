@@ -10,7 +10,7 @@
   	<script src="{{ asset('js/graficas.js') }}" charset="utf-8"></script>
 
 
-  	<div class="container-fluid">
+  	<div class="container-fluid" style="margin-left: 50px">
     <div class="row">
       <div class="col-10 col-md-10 offset-1">
         <br><br>
@@ -61,9 +61,9 @@
       </div>
     </div>
   </div>
-  <div id="container1" style="width: 90%; height: 500px; margin: 0 auto; margin-top: 50px;"></div>
+  <div id="container1" style="width: 90%; height: 500px; margin: 0 auto; margin-top: 50px; margin-left: 110px"></div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" style="margin-left: 50px">
     <div class="row">
       <div class="col-10 col-md-10 offset-1">
         <br><br>
@@ -89,7 +89,7 @@
                   </select>
                 </div>
               </div>
-              <div id="container_anio2" class="col-3">
+              <div id="container_anio2" class="col-3" >
                 <div class="form-group">
                   <label for="anio1">A&ntilde;o:</label>
                   <select class="form-control anio1" id="anio1">
@@ -112,7 +112,7 @@
       </div>
     </div>
   </div>
-  <div id="container2" style="width: 90%; height: 500px; margin: 0 auto; margin-top: 50px;"></div>
+  <div id="container2" style="width: 90%; height: 500px; margin: 0 auto; margin-top: 50px; margin-left: 110px"></div>
 
 
 @endsection

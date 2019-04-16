@@ -3,7 +3,7 @@
 @extends('menu')
 
 @section('content')
-<div class="container" style="margin-top: 5%">
+<div class="container" style="margin-top: 5%; margin-left: 40px">
   <div class="row">
     <div class="col">
       <div class="page-header">
@@ -19,7 +19,7 @@
               <div clas="form-group">
                 {{Form::text('orden_compra', null, ['class' => 'form-control', 'placeholder' =>'Orden de Compra'])}}
               </div>
-              
+
               <div clas="form-group">
                 <button type="submit" class="btn btn-light" >
                     <i class="fa fa-search" ></i>

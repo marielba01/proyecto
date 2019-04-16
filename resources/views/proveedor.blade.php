@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container" style="margin-left: 150px">
 
     <table id="example" class="table table-striped table-bordered" style="width:90%; margin-left:1%; background:#fafafa" >
        <thead>

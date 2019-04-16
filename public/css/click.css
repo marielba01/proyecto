@@ -6,6 +6,7 @@ body{
 #centrador{
     background: white;
     height: 80px;
+    width: 100%;
   }
 
 
@@ -199,17 +200,8 @@ div.row.justify-content-center{
   padding: 15%;
 }
 
-#img_nea
+div.row
 {
-  float: right;
-}
+  width: 1200px;
 
-#position
-{
-  display: inline;
 }
-
-/* div#position
-{
-  margin: 5px;
-} */

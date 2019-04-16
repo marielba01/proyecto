@@ -11,7 +11,7 @@
     </head>
   </head>
   <body style="padding: 10% 25%; background: url(../../svg/fondo.svg)">
-    <div class="alert alert-dark" style="border-color: black; ">
+    <div class="alert alert-dark" style="border-color: black; width: 700px">
     <div class="row" style="margin: 4% 0%;">
         <div class="col">
             <h1>¿Desea Cambiar el Estatus del ID N° {{ $cargar->id }} ?</h1>

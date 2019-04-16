@@ -3,7 +3,7 @@
 @extends('menu')
 
 @section('content')
-<div class="container" style="margin-top: 5%">
+<div class="container" style="margin-top: 5%; margin-left: 40px">
   <div class="row">
     <div class="col">
       <div class="page-header">
