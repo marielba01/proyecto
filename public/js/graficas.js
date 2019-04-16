@@ -120,7 +120,7 @@ function graficarTipoOperacionGrafica(tipo, anio){
       yAxis: {
         min: 0,
         title: {
-          text: 'Casos negativos'
+          text: 'Estatus'
         }
       },
       tooltip: {

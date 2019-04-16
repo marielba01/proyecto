@@ -4,17 +4,17 @@
 
 <div class="container">
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="margin-top:-4%">
 
 
       <link rel="stylesheet" type="text/css" href="css/click.css"/>
 
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"> <img src= "imagenes/logo.png" class="img-fluid" alt="Responsive" style="height:50px; width:100px; margin-Left:0.5%; margin-top:1%; margin-bottom:-1.5%" > <h5 style="text-align:center; margin-top:-4%">Bienvenido</h5>
+                <div class="card-header"> <img src= "imagenes/logo.png" class="img-fluid" alt="Responsive" style="height:50px; width:100px; margin-Left:0.5%; margin-top:1%; margin-bottom:-1.5%" > <h5 style="text-align:center; margin-top:4%">Bienvenido al Sistema de Administracion de Lotes de Pines</h5>
 </div>
 
-                <div class="card-body" style="background:#ffebee  ">
+                <div class="card-body" style="background:#ffebee ">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -49,27 +49,21 @@
 
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
-                                {{-- <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Recordarme') }}
-                                    </label>
-                                </div> --}}
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div class="form-group row mb-0" style="margin-left:8%">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Enviar') }}
                                 </button>
 
-                                @if (Route::has('password.request'))
+                                {{-- @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Olvido Su Contraseña?') }}
                                     </a>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
                     </form>

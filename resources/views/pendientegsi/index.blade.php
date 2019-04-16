@@ -58,7 +58,7 @@
 
             @endforeach
             </table>
-              <ul class="pagination" role="navigation">
+              <ul id="pagination" role="navigation">
                 {{ $pendiente->render()}}
               </ul>
 
