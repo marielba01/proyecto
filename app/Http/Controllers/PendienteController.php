@@ -43,7 +43,7 @@ class PendienteController extends Controller
           ->id($id)
           ->proveedor($proveedor)
           ->orden($orden_compra)
-          ->paginate(25);
+          ->paginate(10);
 
         return view('pendientegsi.index',compact('items','pendiente'));
     }

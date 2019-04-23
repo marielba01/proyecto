@@ -14,7 +14,7 @@
     <div class="alert alert-dark" style="border-color: black; ">
     <div class="row" style="margin: 4% 0%;">
         <div class="col">
-            <h1>¿Verificó que la información <br> suministrada por sistema, coincide <br> con la que usted posee ?</h1>
+            <h1>¿Verificó que la información <br> suministrada por el sistema, coincide <br> con la que usted posee ?</h1>
         </div>
     </div>
     <div class="row">

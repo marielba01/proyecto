@@ -9,11 +9,11 @@
               <div class="col">
                 <div class="page-header">
                       {{Form::open(['route' => 'cargado.index', 'method'=> 'GET', 'class' => 'form-inline pull-center'])}}
-                      <div clas="form-group" >
+                      <div clas="form-group" style="margin-Left:1%">
                         {{Form::text('id', null, ['class' => 'form-control', 'placeholder' =>'ID'])}}
                       </div>
 
-                        <div clas="form-group" >
+                        <div clas="form-group">
                           {{Form::text('proveedor', null, ['class' => 'form-control', 'placeholder' =>'Proveedor'])}}
                         </div>
 

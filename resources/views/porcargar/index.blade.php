@@ -8,7 +8,7 @@
     <div class="col">
       <div class="page-header">
             {{Form::open(['route' => 'porcargar.index', 'method'=> 'GET', 'class' => 'form-inline pull-center'])}}
-            <div clas="form-group" >
+            <div clas="form-group" style="margin-Left:1%" >
               {{Form::text('id', null, ['class' => 'form-control', 'placeholder' =>'ID'])}}
             </div>
 
