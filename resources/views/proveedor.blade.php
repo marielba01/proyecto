@@ -11,7 +11,7 @@
             <tr class="encabezadotabla">
                 <th class="text-center">ID</th>
                 <th class="text-center">Proveedor</th>
-                <th class="text-center">Orden de Compra</th>
+                <th class="text-center" >Orden de Compra</th>
                 <th class="text-center">Tiraje </th>
                 <th class="text-center">Valor Facial</th>
                 <th class="text-center">Motivo</th>

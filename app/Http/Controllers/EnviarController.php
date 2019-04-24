@@ -46,7 +46,7 @@ class EnviarController extends Controller
       ->id($id)
       ->proveedor($proveedor)
       ->orden($orden_compra)
-      ->paginate(18);
+      ->paginate(4);
 
         return view('porenviar.index',compact('items','enviar'));
     }

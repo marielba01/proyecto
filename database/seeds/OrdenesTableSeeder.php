@@ -12,6 +12,6 @@ class OrdenesTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Orden::class, 200)->create();
+        factory(Orden::class, 3000)->create();
     }
 }

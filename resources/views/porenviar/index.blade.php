@@ -60,7 +60,7 @@
           </tr>
   @endforeach
   </table>
-    <ul class="pagination" role="navigation">
+    <ul class="pagination" id="unico" role="navigation">
       {{ $enviar->render()}}
     </ul>
   </div>

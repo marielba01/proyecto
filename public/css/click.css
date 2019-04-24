@@ -110,8 +110,9 @@ body{
     padding-right:100px;
   }
 
+  /* paginacion para el lote de pendiente */
   ul#pagination{
-    padding-left: 9%;
+    padding-left: 8%;
     padding-right: 10px;
     margin-left: 40%;
   }
@@ -198,4 +199,14 @@ footer
 
 div.row.justify-content-center{
   padding: 15%;
+}
+
+
+th.text-center.sorting
+{
+  width: 130px;
+}
+
+#unico{
+  padding-left: 86.5%;
 }
