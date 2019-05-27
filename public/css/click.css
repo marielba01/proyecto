@@ -210,3 +210,9 @@ th.text-center.sorting
 #unico{
   padding-left: 86.5%;
 }
+
+div#login.row{
+  min-width: 1000px;
+  min-height: 520px;
+  /* height: 100%; */
+}

@@ -29,7 +29,7 @@
                         </div>
                       {!! Form::Close() !!}
                 </div>
-                <table class="table table-striped table-bordered" style="width:90%; margin-left:1%; background:#fafafa">
+                <table class="table table-striped table-bordered responsive" style=" margin-left:1%; background:#fafafa">
                   <thead class="encabezadotabla">
                        <tr>
                            <th class="text-center">ID</th>
